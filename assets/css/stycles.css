@@ -1,63 +1,108 @@
-/* Navbar Styles */
-nav {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	background: #333;
-	color: white;
-	padding: 10px 20px;
-	z-index: 1000;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-nav .navbar-container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-nav .logo {
-	font-size: 1.5rem;
-	color: white;
-	text-decoration: none;
-}
-
-nav .nav-links {
-	list-style: none;
-	display: flex;
+/* Reset some default styles */
+* {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
-nav .nav-links li {
-	margin: 0 15px;
+body {
+	font-family: 'Arial', sans-serif;
+	line-height: 1.6;
+	background-color: #f4f4f4;
+	color: #333;
 }
 
-nav .nav-links a {
-	color: white;
+/* Navigation Bar */
+nav {
+	background-color: #333;
+	color: #fff;
+	padding: 1rem 0;
+}
+
+nav ul {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+}
+
+nav ul li {
+	margin: 0 1rem;
+}
+
+nav ul li a {
+	color: #fff;
 	text-decoration: none;
-	transition: color 0.3s;
+	font-weight: bold;
 }
 
-nav .nav-links a:hover {
-	color: #FFD700;
+nav ul li a:hover {
+	text-decoration: underline;
 }
 
-/* Footer Styles */
-footer {
-	background: #333;
-	color: white;
+/* Header Section */
+header {
 	text-align: center;
-	padding: 20px;
+	padding: 2rem 1rem;
+	background-color: #fff;
 }
 
-footer .footer-links a {
-	margin: 0 10px;
-	color: white;
+.profile-pic {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+header h1 {
+	margin-top: 1rem;
+	font-size: 2.5rem;
+}
+
+header p {
+	font-size: 1.2rem;
+	margin: 0.5rem 0 1.5rem;
+}
+
+.btn {
+	display: inline-block;
+	padding: 0.7rem 1.5rem;
+	background-color: #007BFF;
+	color: #fff;
 	text-decoration: none;
-	transition: color 0.3s;
+	border-radius: 5px;
 }
 
-footer .footer-links a:hover {
-	color: #FFD700;
+.btn:hover {
+	background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+	text-align: center;
+	padding: 1rem 0;
+	background-color: #333;
+	color: #fff;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+	nav ul {
+		flex-direction: column;
+	}
+
+	nav ul li {
+		margin: 0.5rem 0;
+	}
+
+	header h1 {
+		font-size: 2rem;
+	}
+
+	.profile-pic {
+		width: 120px;
+		height: 120px;
+	}
 }
