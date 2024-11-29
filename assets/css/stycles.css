@@ -1,98 +1,63 @@
-/* Reset some default styles */
-* {
+/* Navbar Styles */
+nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: #333;
+	color: white;
+	padding: 10px 20px;
+	z-index: 1000;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav .navbar-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav .logo {
+	font-size: 1.5rem;
+	color: white;
+	text-decoration: none;
+}
+
+nav .nav-links {
+	list-style: none;
+	display: flex;
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
 }
 
-body {
-	font-family: 'Arial', sans-serif;
-	line-height: 1.6;
-	background-color: #f4f4f4;
-	color: #333;
+nav .nav-links li {
+	margin: 0 15px;
 }
 
-/* Navigation Bar */
-nav {
-	font-family: 'Roboto', sans-serif;
-	background: linear-gradient(90deg, #007BFF, #0056b3); /* Gradient background */
-}
-
-nav ul li a:hover {
-	color: #FFD700; /* Gold highlight on hover */
-	border-bottom: 2px solid #FFD700; /* Underline effect */
-}
-
-nav ul li a {
-	transition: color 0.3s ease, border-bottom 0.3s ease;
-	font-size: 1rem;
-}
-
-
-/* Header Section */
-header {
-	text-align: center;
-	padding: 2rem 1rem;
-	background-color: #fff;
-}
-
-.profile-pic {
-	width: 200px;
-	height: 200px;
-	border-radius: 50%;
-	object-fit: cover;
-}
-
-header h1 {
-	margin-top: 1rem;
-	font-size: 2.5rem;
-}
-
-header p {
-	font-size: 1.2rem;
-	margin: 0.5rem 0 1.5rem;
-}
-
-.btn {
-	display: inline-block;
-	padding: 0.7rem 1.5rem;
-	background-color: #007BFF;
-	color: #fff;
+nav .nav-links a {
+	color: white;
 	text-decoration: none;
-	border-radius: 5px;
+	transition: color 0.3s;
 }
 
-.btn:hover {
-	background-color: #0056b3;
+nav .nav-links a:hover {
+	color: #FFD700;
 }
 
-/* Footer */
+/* Footer Styles */
 footer {
+	background: #333;
+	color: white;
 	text-align: center;
-	padding: 1rem 0;
-	background-color: #333;
-	color: #fff;
-	position: fixed;
-	width: 100%;
-	bottom: 0;
+	padding: 20px;
 }
 
-/* Responsive Navigation */
-@media (max-width: 768px) {
-	nav ul {
-		flex-direction: column;
-	}
+footer .footer-links a {
+	margin: 0 10px;
+	color: white;
+	text-decoration: none;
+	transition: color 0.3s;
+}
 
-	nav ul li {
-		margin: 0.5rem 0;
-	}
-
-	header h1 {
-		font-size: 2rem;
-	}
-
-	.profile-pic {
-		width: 120px;
-		height: 120px;
-	}
+footer .footer-links a:hover {
+	color: #FFD700;
 }
