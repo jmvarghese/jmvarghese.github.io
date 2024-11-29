@@ -14,30 +14,20 @@ body {
 
 /* Navigation Bar */
 nav {
-	background-color: #333;
-	color: #fff;
-	padding: 1rem 0;
-}
-
-nav ul {
-	display: flex;
-	justify-content: center;
-	list-style: none;
-}
-
-nav ul li {
-	margin: 0 1rem;
-}
-
-nav ul li a {
-	color: #fff;
-	text-decoration: none;
-	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	background: linear-gradient(90deg, #007BFF, #0056b3); /* Gradient background */
 }
 
 nav ul li a:hover {
-	text-decoration: underline;
+	color: #FFD700; /* Gold highlight on hover */
+	border-bottom: 2px solid #FFD700; /* Underline effect */
 }
+
+nav ul li a {
+	transition: color 0.3s ease, border-bottom 0.3s ease;
+	font-size: 1rem;
+}
+
 
 /* Header Section */
 header {
